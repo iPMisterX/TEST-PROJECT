@@ -221,41 +221,36 @@
 		            <div class="card-row-inner">
 
 
-		                <div class="card-row-image" data-background-image="<? if(mysql_result($strSQL,$i,"img_name1")==''){echo 'assets/img/tmp/product-1.jpg';}else{ echo explode(", ",mysql_result($strSQL,$i,"img_name1"))[(int)mysql_result($strSQL,$i,"main_img")];}?>" style="cursor:pointer" >
-
-
-
-
 		                </div><!-- /.card-row-image -->
 
-		                <div class="card-row-body">
+                    <div class="card-row-body">
 		                    <h2 class="card-row-title"><a href="listing-detail.html"><? echo mysql_result($strSQL,$i,"adname" ) ; ?></a></h2>
 												<div class="card-row-content"><p>รหัส listing : <? echo mysql_result($strSQL,$i,"listing_id"); ?></p></div>
 		                    <div class="card-row-content"><p>คำอธิบาย : <? echo mysql_result($strSQL,$i,"addes"); ?></p></div>
 
 		                </div><!-- /.card-row-body -->
 
-		                <div class="card-row-properties">
-		                    <dl>
+                    <div class="card-row-body">
+		                    <h2 class="card-row-title"><a href="listing-detail.html"><? echo mysql_result($strSQL,$i,"adname" ) ; ?></a></h2>
+												<div class="card-row-content"><p>รหัส listing : <? echo mysql_result($strSQL,$i,"listing_id"); ?></p></div>
+		                    <div class="card-row-content"><p>คำอธิบาย : <? echo mysql_result($strSQL,$i,"addes"); ?></p></div>
 
-		                            <dd>เวลาจัดแสดง</dd><dt><u><? echo mysql_result($strSQL,$i,"list_time")=='ทั้งวัน' ? 'ทั้งวัน' : 'ไม่ทั้งวัน' ; ?></u></dt>
-																<dd>เวลาขั้นต่ำในการลงโฆษณา</dd><dt><? echo mysql_result($strSQL,$i,"least")  ; ?> 	&nbsp;วัน</dt>
-																  <dd>ค่าดำเนินการเปลี่ยนป้ายโฆษณา</dd><dt><? echo mysql_result($strSQL,$i,"actionprice")  ; ?> 	&nbsp;บาท</dt>
+		                </div><!-- /.card-row-body -->
 
-																  <dd>ราคาโฆษณา</dd><dt><? echo mysql_result($strSQL,$i,"adprice")  ; ?> 	&nbsp;บาท&nbsp;ต่อวัน</dt>
-																	<dd>ส่วนลด</dd><dt><? echo mysql_result($strSQL,$i,"dis30day")  ; ?> 	&nbsp;%&nbsp;เมื่อเกิน 30 วัน</dt>
-																	<dd>ส่วนลด</dd><dt><? echo mysql_result($strSQL,$i,"dis365day")  ; ?> 	&nbsp;%&nbsp;เมื่อเกิน 365 วัน</dt>
+                    <div class="card-row-body">
+		                    <h2 class="card-row-title"><a href="listing-detail.html"><? echo mysql_result($strSQL,$i,"adname" ) ; ?></a></h2>
+												<div class="card-row-content"><p>รหัส listing : <? echo mysql_result($strSQL,$i,"listing_id"); ?></p></div>
+		                    <div class="card-row-content"><p>คำอธิบาย : <? echo mysql_result($strSQL,$i,"addes"); ?></p></div>
 
+		                </div><!-- /.card-row-body -->
 
+                    <div class="card-row-body">
+		                    <h2 class="card-row-title"><a href="listing-detail.html"><? echo mysql_result($strSQL,$i,"adname" ) ; ?></a></h2>
+												<div class="card-row-content"><p>รหัส listing : <? echo mysql_result($strSQL,$i,"listing_id"); ?></p></div>
+		                    <div class="card-row-content"><p>คำอธิบาย : <? echo mysql_result($strSQL,$i,"addes"); ?></p></div>
 
+		                </div><!-- /.card-row-body -->
 
-
-
-
-
-
-		                    </dl>
-		                </div><!-- /.card-row-properties -->
 		            </div><!-- /.card-row-inner -->
 								<div class="post-meta clearfix" style="margin: 0px 0px 0px 0px;">
 													<div style="   ">
